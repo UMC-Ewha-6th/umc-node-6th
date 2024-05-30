@@ -1,5 +1,5 @@
-import { status } from "../config/response.status.js";
-import { response } from "../config/response.js";
+import { status } from "../../config/response.status.js";
+import { response } from "../../config/response.js";
 import { getTempData, CheckFlag } from "../services/temp.service.js";
 
 export const tempTest = (req, res, next) => {

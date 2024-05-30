@@ -1,5 +1,5 @@
 import express from 'express';    
-import { tempRouter } from './routes/temp.route.js';
+import { tempRouter } from './src/routes/temp.route.js';
 import { response } from './config/response.js';
 import { BaseError } from './config/error.js';
 import { status } from './config/response.status.js';
