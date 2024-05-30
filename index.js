@@ -7,14 +7,14 @@ import { status } from './config/response.status.js';
 const app = express();
 const port = 3000;
 
+// router setting
+app.use('/temp', tempRouter);
+
 // index.js
 app.use((req, res, next) => {
     const err = new BaseError(status.NOT_FOUND);
     next(err);
 });
-
-// router setting
-app.use('/temp', tempRouter);
 
 // error handling
 app.use((err, req, res, next) => {
