@@ -1,6 +1,6 @@
 import { status } from "../../config/response.status.js";
 import { response } from "../../config/response.js";
-import { getTempData, CheckFlag } from "../services/temp.service.js";
+import { getTempData, CheckFlag } from "../providers/temp.provider.js";
 
 export const tempTest = (req, res, next) => {
     res.send(response(status.SUCCESS, getTempData()));
