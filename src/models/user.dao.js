@@ -13,6 +13,7 @@ export const addUser = async (data) => {
         conn.release();
         return result[0].insertId;
     } catch (err) {
+        console.log(err);
         throw new BaseError(status.PARAMETER_IS_WRONG);
     }
 }
@@ -32,6 +33,7 @@ export const getUser = async (userId) => {
         conn.release();
         return user;
     } catch (err) {
+        console.log(err);
         throw new BaseError(status.PARAMETER_IS_WRONG);
     }
 }
@@ -47,6 +49,7 @@ export const setPrefer = async (userId, foodCategoryId) => {
 
         return;
     } catch (err) {
+        console.log(err);
         throw new BaseError(status.PARAMETER_IS_WRONG);
     }
 }
@@ -61,6 +64,7 @@ export const getUserPreferToUserId = async (userId) => {
 
         return prefer;
     } catch (err) {
+        console.log(err);
         throw new BaseError(status.PARAMETER_IS_WRONG);
     }
 }
