@@ -19,4 +19,7 @@ export const status = {
 
     // article err
     ARTICLE_NOT_FOUND: {status: StatusCodes.NOT_FOUND, "isSuccess": false, "code": "ARTICLE4001", "message": "게시글이 없습니다."},
+
+
+    PARAMETER_IS_WRONG: {status: StatusCodes.BAD_REQUEST, "isSuccess": false, "code": "VALID4001", "message": "전달한 파라미터 정보가 잘못되었습니다."},
 }
